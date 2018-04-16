@@ -8,9 +8,9 @@ export default {
     entry: [
         'eventsource-polyfill', // necessary for hot reloading with IE
         'webpack-hot-middleware/client?reload=true', //note that it reloads the page if hot module reloading fails.
-        path.resolve(__dirname, 'src/index')
+        path.resolve(__dirname, 'src/index') // must be last
     ],
-    target: 'web',
+    target: 'web', // can be node
     output: {
         path: __dirname + '/dist', // Note: Physical files are only output by the production build task `npm run build`.
         publicPath: '/',

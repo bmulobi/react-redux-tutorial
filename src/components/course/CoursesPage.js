@@ -40,13 +40,13 @@ CoursesPage.propTypes = {
   actions: PropTypes.object.isRequired
 };
 
-function mapStateToProps(state, ownProps) {
+function mapStateToProps(state, ownProps) { // fxn can be named anything
   return {
     courses: state.courses
   };
 }
 
-function mapDispatchToProps(dispatch) {
+function mapDispatchToProps(dispatch) { // fxn can be named anything
   return {
     actions: bindActionCreators(courseActions, dispatch)
   };
